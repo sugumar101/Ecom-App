@@ -86,37 +86,38 @@ The server will start on the specified port (default is 3000). You can then acce
 
 ## TechStack:
 
-Backend:
-   Framework- Express.js
-   DB: PostgreSQL with Sequelize
-   Authentication: JWT
-   validation: Express-validator
-   Logger: Winston
-   Documentation: Swagger
-   File Storage: S3
-   Cloud: AWS
+## Backend:
+   - Framework- Express.js
+   - DB: PostgreSQL with Sequelize
+   - Authentication: JWT
+   - validation: Express-validator
+   - Logger: Winston
+    -  Documentation: Swagger
+   - File Storage: S3
+   - Cloud: AWS
 
-Modules:
-   User
-   Products
+## Modules:
+   - User
+   - Products
 
 ## API Endpoints
-   Users:
-      Post: /signup
-      Post: /signin
-      Post: /forgot-password
-      Post: /verify-user
-      Update: /update-profile
-      Get: /view-profile?id=1
+```
+  1.  Users:
+      1. Post: /signup
+      2. Post: /signin
+      3. Post: /forgot-password
+      4. Post: /verify-user
+      5. Update: /update-profile
+      6. Get: /view-profile?id=1
 
-   Products:
-      Get: /roducts?name="xyz"  (get all products and also filtered products)
-      Get: /product/id (get product by id)
-      Update: /product?id=1 (update product by business user)
-      post: /addtocart
-      delete: /deletefromcart
-      post: /checkout  (redirect it to thirdparty API)
-
+   2. Products:
+      1. Get: /roducts?name="xyz"  (get all products and also filtered products)
+      2. Get: /product/id (get product by id)
+      3. Update: /product?id=1 (update product by business user)
+      4. post: /addtocart
+      5. delete: /deletefromcart
+      6. post: /checkout  (redirect it to thirdparty API)
+```
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
