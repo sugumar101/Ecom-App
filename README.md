@@ -1,4 +1,4 @@
-# AWS Deployment Instructions
+# Deployment Instructions
 
 ## Prerequisites
 - Node.js 18 or higher
@@ -83,21 +83,8 @@ npm start
 
 The server will start on the specified port (default is 3000). You can then access the API endpoints as defined in the routes.
 
-## API Endpoints
 
-- `GET /products` - Retrieve a list of products
-- `POST /products` - Create a new product
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-
-TeckStack:
+## TechStack:
 
 Backend:
    Framework- Express.js
@@ -113,22 +100,33 @@ Modules:
    User
    Products
 
-API's:
+## API Endpoints
    Users:
-      /signup
-      /signin
-      /forgot-password
-      /verify-user
-      /update-profile
-      /view-profile?id=1
+      Post: /signup
+      Post: /signin
+      Post: /forgot-password
+      Post: /verify-user
+      Update: /update-profile
+      Get: /view-profile?id=1
 
    Products:
-      Get: /Products?name="xyz"  (get all products and also filtered products)
-      Get: /product?id=1 (get only one product)
+      Get: /roducts?name="xyz"  (get all products and also filtered products)
+      Get: /product/id (get product by id)
       Update: /product?id=1 (update product by business user)
       post: /addtocart
       delete: /deletefromcart
       post: /checkout  (redirect it to thirdparty API)
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+
 
 
 
