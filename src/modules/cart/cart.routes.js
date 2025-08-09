@@ -1,3 +1,20 @@
+/**
+ * @swagger
+ * tags:
+ *   name: Cart
+ *   description: Cart management
+ */
+
+/**
+ * @swagger
+ * /api/cart/checkout:
+ *   post:
+ *     summary: Checkout and redirect to payment
+ *     tags: [Cart]
+ *     responses:
+ *       302:
+ *         description: Redirect to payment
+ */
 const express = require('express');
 const router = express.Router();
 const cartController = require('./cart.controller');

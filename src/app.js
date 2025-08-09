@@ -1,3 +1,6 @@
+// Swagger setup
+const { swaggerUi, swaggerSpec } = require('./utils/swagger');
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 const express = require('express');
 const bodyParser = require('body-parser');
 const setRoutes = require('./routes/index');

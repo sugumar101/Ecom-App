@@ -96,6 +96,16 @@ The server will start on the specified port (default is 3000). You can then acce
    - File Storage: S3
    - Cloud: AWS
 
+   ## API Documentation (Swagger)
+
+   After starting the application, you can access the interactive API documentation at:
+
+      http://localhost:3000/api-docs
+
+   This documentation is auto-generated using Swagger and provides details about all available endpoints, request/response formats, and allows you to try out API calls directly from the browser.
+
+   If you deploy to a different host or port, update the URL accordingly.
+
 ## Modules:
    - User
    - Products
